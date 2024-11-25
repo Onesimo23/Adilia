@@ -64,7 +64,7 @@ class CandidateController extends Controller
             ]);
 
             // Forçar um erro para testar rollback
-            throw new \Exception('Erro simulado!');
+            // throw new \Exception('Erro simulado!');
 
             DB::commit();
             return redirect()->route('candidates.index')->with('success', 'Candidato atualizado com sucesso!');
