@@ -1,4 +1,4 @@
 1- Testes unitários com Pest
-2- Rastreamento de mudanças em modelos
+2- Transações em Aplicações Laravel ( DB::beginTransaction(), DB::commit() e DB::rollback())
 3- Autenticação em dois factores (email via mailtrap)
-4- Comunicação de aplicações via API.( TheMovieDb informações sobre seriese filmes) 
+4- SSO via github

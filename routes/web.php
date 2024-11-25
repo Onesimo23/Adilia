@@ -8,6 +8,11 @@ use App\Http\Controllers\Auth\TwoFactorAuthController;
 use App\Http\Controllers\Auth\SettingsController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\Auth\GithubController;
+use App\Http\Controllers\CandidateController;
+
+
+
+Route::resource('candidates', CandidateController::class);
 
 Route::get('/auth/github', [GithubController::class, 'redirectToGithub'])->name('auth.github');
 Route::get('/auth/github/callback', [GithubController::class, 'handleGithubCallback'])->name('auth.github.callback');
